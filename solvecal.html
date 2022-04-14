@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Chapter - 3</title>
+        <meta name="generator" content="Namo WebEditor(Trial)">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="essential.css">
+    </head>
+    <body>
+        <body>
+            <p align="center">&nbsp;</p>
+            <div class="title">
+                <p align="center">
+                    Chapter 3
+                </p>
+            </div>
+            <p align="center">
+                <img src="image3_0.png" class="image">
+            </p>
+            <p align="center">&nbsp;</p>
+            <div class="context">
+                <p align="center">
+                    달력을 들춰내자<br>
+                    왕자의 수첩을 품고 있는<br>
+                    작은 금고가 모습을 드러냈다.<br>
+                </p>
+                <p align="center">&nbsp;</p>
+                <p align="center">
+                    금고 앞에는<br><b>알 수 없는 말</b>이 쓰여있었다.<br>
+                </p>
+                <p align="center">&nbsp;</p>
+            </div>
+        </body>
+    <p align="center">
+        <img src="image3.png" class="image">
+    </p>
+    <p align="center">&nbsp;</p>
+
+<form id="Form" action="locksolve.html">
+    <input class="form" id="userAnswer"/>
+</form>
+
+<script>
+    var tryTime = 0;
+    var t = document.getElementById('Form');
+    t.addEventListener('submit', function(event){
+        var submitValue = document.getElementById('userAnswer').value;
+        if(submitValue !== "나랑놀아줘ㅡ3ㅡ"){
+            if(tryTime < 3) {
+                tryTime += 1;
+                alert('다른 방법을 생각해보자...')
+            }
+            else if(tryTime < 10) {
+                tryTime += 1;
+                alert('말이 되게 만들어보자.')
+            }
+            else {
+                alert('뒤죽박죽')
+            }
+            event.preventDefault();
+        }
+    });
+</script>
+
+<!-- <button class="button" onclick="location.href='index.html'">왕자를 찾아 떠나기로 했다</button> -->
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+    
+</html>

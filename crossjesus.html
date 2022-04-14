@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Chapter - 8</title>
+        <meta name="generator" content="Namo WebEditor(Trial)">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="essential.css">
+    </head>
+    <body>
+        <p align="center">&nbsp;</p>
+        <div class="title">
+            <p align="center">
+                Chapter 8
+            </p>
+        </div>
+        <p align="center">
+            <img src="image8_0.png" class="image_small">
+        </p>
+        <p align="center">&nbsp;</p>
+        <div class="context">
+            <p align="center">
+                땅바닥에 떨어진 것은<br>
+                분명히 왕자가 떨어뜨린 종이였다.<br>
+            </p>
+            <p align="center">
+                급히 뛰어가<br>
+                종이를 집어<br>
+                단숨에 읽어 내려갔지만<br>
+            </p>
+            <p align="center">&nbsp;</p>
+            <p align="center">
+                그저 <b>평범해 보이는 글</b>이었다.<br>
+            </p>
+            <p align="center">&nbsp;</p>
+        </div>
+<p align="center">
+    <img src="image8.png" class="image">
+</p>
+<p align="center">&nbsp;</p>
+
+<form id="Form" action="notnormaltext.html">
+    <input class="form" id="userAnswer"/>
+</form>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+</body>
+<script>
+    var tryTime = 0;
+    var t = document.getElementById('Form');
+    t.addEventListener('submit', function(event){
+        var submitValue = document.getElementById('userAnswer').value;
+        if(submitValue !== "선물이있다"){
+            if(tryTime < 3) {
+                tryTime += 1;
+                alert('다른 방법을 생각해보자...')
+            }
+            else if(tryTime < 10) {
+                tryTime += 1;
+                alert('역시 그림 속에 정답이 있다.')
+            }
+            else {
+                alert('한쪽 방향으로만 읽는건 편견이다.')
+            }
+            event.preventDefault();
+        }
+    });
+</script>    
+</html>

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Square+Peg&display=swap');
+
+* {
+    background-color: white;
+    color: black;
+    font-size: 26pt;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+.context *{
+    color: black;
+    font-size: 1.0rem;
+    letter-spacing: -0.1rem;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.title *{
+    color: black;
+    font-size: 250px;
+    font-family: 'Square Peg', cursive;
+
+}
+
+.button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  
+    display: inline-block;
+    width: auto;
+}
+
+.image {
+    width: 70%;
+}
+
+.image_small {
+    width: 20%;
+}
+
+
+.form {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  
+    display: inline-block;
+    width: auto;
+}

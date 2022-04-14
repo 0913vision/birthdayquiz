@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Chapter - 1</title>
+        <meta name="generator" content="Namo WebEditor(Trial)">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="essential.css">
+    </head>
+    <body>
+        <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+            <p align="center">&nbsp;</p>
+            <div class="title">
+                <p align="center">
+                    Chapter 1
+                </p>
+            </div>
+            <p align="center">
+                <img src="image1_0.png" class="image">
+            </p>
+            <p align="center">&nbsp;</p>
+            <div class="context">
+                <p align="center">
+                    이별은 갑작스럽다.<br>공주에게도 마찬가지였다.<br>
+
+                </p>
+                <p align="center">
+                    불행하게도 그녀에게는<br>
+                    일말의 단서조차 주어지지 않은 듯 보였다.<br>
+                </p>
+                <p align="center">
+                    다리에 힘이 풀려버린 채,<br>주저앉은 공주의 눈 앞에<br>
+                </p>
+                <p align="center">
+                    운명의 장난처럼,<br>종이 한 장이 놓여있었다.<br>
+                </p>
+                <p align="center">&nbsp;</p>
+                <p align="center">
+                    그녀가 사랑하는 사람이 남겨둔<br>출발<b>시간</b>에 대한 흔적이었다.
+                </p>
+                <p align="center">&nbsp;</p>
+            </div>
+        </body>
+        <p align="center">
+</p>
+<p align="center">
+    <img src="image1.png" class="image">
+</p>
+<p align="center">&nbsp;</p>
+
+<form id="Form" action="firstfind.html">
+    <input class="form" id="userAnswer"/>
+</form>
+
+<script>
+    var tryTime = 0;
+    var t = document.getElementById('Form');
+    t.addEventListener('submit', function(event){
+        var submitValue = document.getElementById('userAnswer').value;
+        if(submitValue !== "12:00"){
+            if(tryTime < 3) {
+                tryTime += 1;
+                alert('다른 방법을 생각해보자...')
+            }
+            else {
+                alert('□□:□□ 처럼 쓰면 되지 않을까?')
+            }
+            event.preventDefault();
+        }
+    });
+</script>
+
+<!-- <button class="button" onclick="location.href='index.html'">왕자를 찾아 떠나기로 했다</button> -->
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+    
+</html>

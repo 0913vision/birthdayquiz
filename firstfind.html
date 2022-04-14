@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Chapter - 2</title>
+        <meta name="generator" content="Namo WebEditor(Trial)">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="essential.css">
+    </head>
+    <body>
+        <body>
+            <p align="center">&nbsp;</p>
+            <div class="title">
+                <p align="center">
+                    Chapter 2
+                </p>
+            </div>
+            <p align="center">
+                <img src="image2_0.png" class="image">
+            </p>
+            <p align="center">&nbsp;</p>
+            <div class="context">
+                <p align="center">
+                    왕자의 첫 번째 흔적을 찾은 공주는<br>
+                    출발 시간과 <b>날짜</b>를 맞춰보기 위해<br>
+                    달력 앞에 섰다.<br>
+                </p>
+                <p align="center">&nbsp;</p>
+                <p align="center">
+                    달력에는 왕자가 남긴<br>작은 <b>숫자</b> 두 개가 있었다.<br>
+                </p>
+                <p align="center">&nbsp;</p>
+                <p align="center">
+                    <i>'이게 무슨 숫자였더라...'</i>
+                </p>
+                <p align="center">&nbsp;</p>
+            </div>
+        </body>
+<p align="center">
+    <img src="image2.png" class="image">
+</p>
+<p align="center">&nbsp;</p>
+
+<form id="Form" action="solvecal.html">
+    <input class="form" id="userAnswer"/>
+</form>
+
+<script>
+    var tryTime = 0;
+    var t = document.getElementById('Form');
+    t.addEventListener('submit', function(event){
+        var submitValue = document.getElementById('userAnswer').value;
+        if(submitValue !== "956418"){
+            if(tryTime < 3) {
+                tryTime += 1;
+                alert('다른 방법을 생각해보자...')
+            }
+            else if(tryTime < 10) {
+                tryTime += 1;
+                alert('곱하기는 아닌거 같다.')
+            }
+            else {
+                alert('6자리 숫자를 입력하면 될 것 같은데..')
+            }
+            event.preventDefault();
+        }
+    });
+</script>
+
+<!-- <button class="button" onclick="location.href='index.html'">왕자를 찾아 떠나기로 했다</button> -->
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+    
+</html>

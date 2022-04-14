@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Chapter - 11</title>
+        <meta name="generator" content="Namo WebEditor(Trial)">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="essential.css">
+    </head>
+    <body>
+        <p align="center">&nbsp;</p>
+        <div class="title">
+            <p align="center">
+                Chapter 11
+            </p>
+        </div>
+        <p align="center">
+            <img src="image11_0.png" class="image">
+        </p>
+        <p align="center">&nbsp;</p>
+        <div class="context">
+            <p align="center">
+                공주는 왕자에게 한걸음에 달려갔다.<br>
+            </p>
+            <p align="center">
+                왕자가 공주에게<br>
+                정말 공주가 맞냐고 되물었다.<br>
+            </p>
+            <p align="center">&nbsp;</p>
+            <p align="center">
+                그러자 공주는<br>
+                <b>자신이 이 세상에 태어난 날</b>을<br>
+                왕자에게 말해주었다.<br>
+            </p>
+            <p align="center">&nbsp;</p>
+        </div>
+<!-- <p align="center">
+    <img src="image10.png" class="image">
+</p> -->
+<p align="center">&nbsp;</p>
+
+<form id="Form" action="mybirthdayis.html">
+    <input class="form" id="userAnswer"/>
+</form>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+</body>
+<script>
+    var tryTime = 0;
+    var t = document.getElementById('Form');
+    t.addEventListener('submit', function(event){
+        var submitValue = document.getElementById('userAnswer').value;
+        if(submitValue !== "0415"){
+            if(tryTime < 3) {
+                tryTime += 1;
+                alert('다른 방법을 생각해보자...')
+            }
+            else if(tryTime < 10) {
+                tryTime += 1;
+                alert('공주는 바로 당신이다.')
+            }
+            else {
+                alert('4글자로 바꿀 수 있을까?')
+            }
+            event.preventDefault();
+        }
+    });
+</script>    
+</html>
